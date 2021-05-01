@@ -2,6 +2,7 @@ package inheritance2;
 
 public class LogManager {
 	//Birbirinin alternetifi olan kodlar if ile yönetilemez. Alternatifler kendi class'i icerisinde olusturulur
+	
 	public void log(int logType) {
 		if (logType == 1) {
 			System.out.println("Veritabanina loglandi");
