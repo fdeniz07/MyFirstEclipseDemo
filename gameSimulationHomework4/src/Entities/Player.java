@@ -80,4 +80,9 @@ public class Player implements IEntity{
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String getFullName() {
+		return firstName + " " + lastName;
+	}
+
 }

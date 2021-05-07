@@ -6,7 +6,7 @@ public abstract class BaseGameManager implements IGameService {
 
 	@Override
 	public void add(Game game) {
-		System.out.println("Oyun eklendi : " + game.getName());
+		System.out.println("Oyun eklendi : " + game.getName() + " : " + game.getPrice() +"€");
 
 	}
 

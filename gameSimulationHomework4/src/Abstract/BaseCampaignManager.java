@@ -16,7 +16,7 @@ public abstract class BaseCampaignManager implements ICampaignService {
 			isActive="Pasif";
 		}
 		
-		System.out.println("Yeni kampanya eklendi: " + campaign.getName() + " - " + "Durumu: " + isActive);	
+		System.out.println("Yeni kampanya eklendi: " + campaign.getName() + " : " + campaign.getDescription() + " - " + "Durumu: " + isActive);	
 	}
 
 	@Override

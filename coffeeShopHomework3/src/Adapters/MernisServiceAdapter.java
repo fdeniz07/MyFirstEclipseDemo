@@ -14,7 +14,7 @@ public class MernisServiceAdapter implements ICustomerCheckService {
 		boolean isValidated = false;
 		KPSPublicSoapProxy client = new KPSPublicSoapProxy();
 		try {
-			isValidated = client.TCKimlikNoDogrula(customer.getNationalityId(), customer.getFirstName(),
+			return client.TCKimlikNoDogrula(customer.getNationalityId(), customer.getFirstName(),
 					customer.getLastName(), customer.getDateOfBirth());
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
