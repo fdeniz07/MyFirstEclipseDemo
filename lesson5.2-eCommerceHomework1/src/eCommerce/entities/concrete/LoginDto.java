@@ -12,7 +12,7 @@ public class LoginDto implements Dto{
 		this.email = email;
 		this.password = password;
 		
-	}
+	}
 
 	public LoginDto() {
 		super();
