@@ -14,8 +14,6 @@ import kodlamaio.northwind.entities.concretes.Product;
 @RequestMapping("/api/products")  // disaridan birisi istekte bulunursa bu controller cevap verecek
 public class ProductsController {
 
-
-
 	private ProductService productService;
 	
 	@Autowired //projeyi tarar IoC yapiyor (kendi new ler bizim new lememize gerek kalmaz)
@@ -26,8 +24,16 @@ public class ProductsController {
 	
 	@GetMapping("/getall")  //kodlama.io/api/products/getall -> [HttpGet]
 	public List<Product> getAll(){
-		return this.productService.getAll();
+		return this.productService.getAll(); //return new Result(true) this.productService.getAll(); Islem sonucunun basarili oldugunu bu sekilde anlatacagiz
 	}
+	
+	/*
+	@PostMapping("/add")
+	public Result add(Product product){
+		return new Result(true,"Ürün eklendi"); 
+	}
+	7.gün videosu 1.10.00 saatine dikkat
+	*/
 	
 }
 
