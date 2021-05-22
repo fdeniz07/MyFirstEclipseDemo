@@ -11,31 +11,28 @@ import kodlamaio.northwind.business.abstracts.ProductService;
 import kodlamaio.northwind.entities.concretes.Product;
 
 @RestController
-@RequestMapping("/api/products")  // disaridan birisi istekte bulunursa bu controller cevap verecek
+@RequestMapping("/api/products") // disaridan birisi istekte bulunursa bu controller cevap verecek
 public class ProductsController {
 
 	private ProductService productService;
-	
-	@Autowired //projeyi tarar IoC yapiyor (kendi new ler bizim new lememize gerek kalmaz)
+
+	@Autowired // projeyi tarar IoC yapiyor (kendi new ler bizim new lememize gerek kalmaz)
 	public ProductsController(ProductService productService) {
 		super();
 		this.productService = productService;
 	}
-	
-	@GetMapping("/getall")  //kodlama.io/api/products/getall -> [HttpGet]
-	public List<Product> getAll(){
-		return this.productService.getAll(); //return new Result(true) this.productService.getAll(); Islem sonucunun basarili oldugunu bu sekilde anlatacagiz
-	}
-	
-	/*
-	@PostMapping("/add")
-	public Result add(Product product){
-		return new Result(true,"Ürün eklendi"); 
-	}
-	7.gün videosu 1.10.00 saatine dikkat
-	*/
-	
-}
 
+	@GetMapping("/getall") // kodlama.io/api/products/getall -> [HttpGet]
+	public List<Product> getAll() {
+		return this.productService.getAll(); // return new Result(true) this.productService.getAll(); Islem sonucunun
+												// basarili oldugunu bu sekilde anlatacagiz
+	}
+
+	/*
+	 * @PostMapping("/add") public Result add(Product product){ return new
+	 * Result(true,"Ürün eklendi"); } 7.gün videosu 1.10.00 saatine dikkat
+	 */
+
+}
 
 //kodlama.io/api/products

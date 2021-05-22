@@ -13,11 +13,11 @@ public class Result {
 		this(success); // tek parametreli constructor cagrilir(DRY)
 		this.message = message;
 	}
-	
+
 	public boolean isSuccess() {
 		return this.success;
 	}
-	
+
 	public String getMessage() {
 		return this.message;
 	}
