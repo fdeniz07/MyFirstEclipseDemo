@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$USER_HOME$/.p2/pool/plugins/org.apache.axis_1.4.0.v201411182030/lib/axis.jar!/" />
+    <libelement value="jar://$USER_HOME$/.p2/pool/plugins/org.apache.commons.discovery_0.2.0.v201004190315/lib/commons-discovery-0.2.jar!/" />
+    <libelement value="jar://$USER_HOME$/.p2/pool/plugins/javax.xml.rpc_1.1.0.v201209140446/lib/jaxrpc.jar!/" />
+    <libelement value="jar://$USER_HOME$/.p2/pool/plugins/javax.xml.soap_1.2.0.v201005080501/lib/saaj.jar!/" />
+    <libelement value="jar://$USER_HOME$/.p2/pool/plugins/javax.wsdl_1.6.2.v201012040545.jar!/" />
+    <libelement value="jar://$USER_HOME$/.p2/pool/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar!/" />
+    <libelement value="jar://$USER_HOME$/Desktop/activation.jar!/" />
+    <libelement value="jar://$USER_HOME$/Desktop/javax.mail.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="JavaSE-15" jdkType="JavaSDK" />
+    <orderEntry type="module-library">
+      <library name="axis.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.p2/pool/plugins/org.apache.axis_1.4.0.v201411182030/lib/axis.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-discovery-0.2.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.p2/pool/plugins/org.apache.commons.discovery_0.2.0.v201004190315/lib/commons-discovery-0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaxrpc.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.p2/pool/plugins/javax.xml.rpc_1.1.0.v201209140446/lib/jaxrpc.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="saaj.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.p2/pool/plugins/javax.xml.soap_1.2.0.v201005080501/lib/saaj.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.wsdl_1.6.2.v201012040545.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.p2/pool/plugins/javax.wsdl_1.6.2.v201012040545.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="org.apache.commons.logging_1.2.0.v20180409-1502.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.p2/pool/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activation.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/activation.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.mail.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/javax.mail.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
