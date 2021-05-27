@@ -42,7 +42,7 @@ public class Product {
 	@Column(name = "quantity_per_unit")
 	private String quantityPerUnit;
 
-	@ManyToOne()
+	@ManyToOne() // Bulunan alan (products) --> Cagrilan Alan(categoreis) - product tablosunda ayni categoryid birden cok yerde tekrar eder
 	@JoinColumn(name="category_id")
 	private Category category;
 }

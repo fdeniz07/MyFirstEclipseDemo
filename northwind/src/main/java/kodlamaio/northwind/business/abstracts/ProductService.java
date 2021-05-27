@@ -10,13 +10,17 @@ public interface ProductService {
 
 	DataResult<List<Product>> getAll();
 	
+	DataResult<List<Product>> getAllSorted();
+	
+	DataResult<List<Product>> getAll(int pageNo, int pageSize); // Paging 0 dan baslar bu yüzden -1 girilir
+	
 	Result add(Product product);
 	
 	DataResult<Product> getByProductName(String productName);
 	  
-    DataResult<Product> getByProductNameAndCategory(String productName, int categoryId);
+    DataResult<Product> getByProductNameAndCategoryId(String productName, int categoryId);
 	  
-    DataResult<List<Product>> getByProductNameOrCategory(String productName, int categoryId);
+    DataResult<List<Product>> getByProductNameOrCategoryId(String productName, int categoryId);
 	  
     DataResult<List<Product>> getByCategoryIn(List<Integer> categories);
 	  
@@ -25,4 +29,6 @@ public interface ProductService {
     DataResult<List<Product>> getByProductNameStartsWith(String productName);
 
     DataResult<List<Product>> getByNameAndCategory(String productName, int categoryId);
+    
+    
 }

@@ -29,8 +29,7 @@ public class ProductsController {
 
 	@GetMapping("/getall") // kodlama.io/api/products/getall -> [HttpGet]
 	public DataResult<List<Product>> getAll() {
-		return this.productService.getAll(); // return new Result(true) this.productService.getAll(); Islem sonucunun
-												// basarili oldugunu bu sekilde anlatacagiz
+		return this.productService.getAll(); // return new Result(true) this.productService.getAll(); Islem sonucunun basarili oldugunu bu sekilde anlatacagiz
 	}
 	
 	
@@ -46,10 +45,32 @@ public class ProductsController {
 
 	@GetMapping("/getByProductName") 
 	public DataResult<Product> getByProductName(@RequestParam String productName) {
-return this.productService.getByProductName(productName);
+		return this.productService.getByProductName(productName);
+	}
+	
+	@GetMapping("/getByProductNameOrCategoryId") 
+	public DataResult<List<Product>> getByProductNameOrCategoryId(@RequestParam("productName") String productName, @RequestParam ("categoryId") int categoryId) {
+		return this.productService.getByProductNameOrCategoryId(productName, categoryId);
 	}
 	
 	
+	@GetMapping("/getByProductNameContains") 
+	public DataResult<List<Product>> getByProductNameContains(@RequestParam String productName) {
+		return this.productService.getByProductNameContains(productName);
+	}
+	
+	@GetMapping("/getAllByPage") 
+	DataResult<List<Product>> getAll(int pageNo, int pageSize){
+		return this.productService.getAll(pageNo,pageSize);
+	}
+	
+	@GetMapping("/getAllDesc") 
+	public DataResult<List<Product>> getAllSorted() {
+	return this.productService.getAllSorted();
+	}
 }
+
+
+
 
 //kodlama.io/api/products
