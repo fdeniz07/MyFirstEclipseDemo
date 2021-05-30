@@ -20,12 +20,10 @@ public class NorthwindApplication {
 
 	@Bean // Konfigurasyon amacli kullanilir.Uygulama basladigi an springboot @bean'i
 			// gördügü an bellege yerlestirir
-	
+
 	public Docket api() {
-		return new Docket(DocumentationType.SWAGGER_2)
-				.select()
-				.apis(RequestHandlerSelectors.basePackage("kodlamaio.northwind"))
-				.build();
+		return new Docket(DocumentationType.SWAGGER_2).select()
+				.apis(RequestHandlerSelectors.basePackage("kodlamaio.northwind")).build();
 	}
 
 }
